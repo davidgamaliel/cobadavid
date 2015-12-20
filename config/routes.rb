@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  get 'authenticate/login'
-  post 'authenticate/logged_in'
+  root "pages#home"
 
-  get 'authenticate/logout'
+  get "about" => "pages#about"
+  
+  get 'pages/home'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
