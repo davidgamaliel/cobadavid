@@ -11,6 +11,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'devise', '~> 3.5.3'
 
 gem 'coffee-script-source', '1.8.0'
 
