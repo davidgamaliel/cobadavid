@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  resources :tweets
+
   root "pages#home"
 
   get "about" => "pages#about"
+  get "tweet" => "tweets#index"
   
   get 'pages/home'
 
