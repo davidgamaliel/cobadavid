@@ -15,16 +15,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'coffee-script-source', '1.8.0'
 
 
-group: :development, :test do
+group :development, :test do
 	gem 'sqlite3', '1.3.11'
 end
 
-group: :production do
+group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
 
-group: :doc do
+group :doc do
 	gem 'sdoc', '~> 0.4.0', require: false
 end
 
