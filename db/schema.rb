@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106181426) do
+ActiveRecord::Schema.define(version: 20160106191654) do
 
   create_table "pins", force: true do |t|
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "pins", ["user_id"], name: "index_pins_on_user_id"
 
   create_table "tweets", force: true do |t|
     t.string   "message"
